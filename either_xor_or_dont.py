@@ -5,5 +5,3 @@ flag_format = b'crypto{'
 key = [o1 ^ o2
        for (o1, o2) in zip(string2, flag_format)] + [ord("y")]
 
-key_string = ''.join(chr(i) for i in key)
-print(key_string)
