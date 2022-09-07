@@ -1,6 +1,8 @@
-string = "73626960647f6b206821204f21254f7d694f7624662065622127234f726927756d"
-string2 = bytes.fromhex(string)
-stringlist_to_xor = [i for i in string2]
+from binascii import unhexlify
+
+encrypted = "73626960647f6b206821204f21254f7d694f7624662065622127234f726927756d"
+encrypted = unhexlify(encrypted)
+stringlist_to_xor = [i for i in encrypted]
 
 possibleflag_list = []
 for order in range(256):
