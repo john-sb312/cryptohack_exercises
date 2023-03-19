@@ -24,7 +24,7 @@
 
 def inverse(p, q):
     if p == 0 :
-        return q,0,1
+        return q, 0, 1
              
     gcd,x1,y1 = inverse(q % p, p)
      
