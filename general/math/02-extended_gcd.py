@@ -33,4 +33,4 @@ def inverse(p, q):
      
     return gcd, x, y
 
-print(inverse(26513, 32321))
+print(inverse(32321, 26513))

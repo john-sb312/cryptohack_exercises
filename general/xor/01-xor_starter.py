@@ -1,8 +1,5 @@
 string = ''
-
 for i in "label":
-    tmp = ord(i) ^ 13
-    string += chr(tmp)
-
+    string += chr(ord(i) ^ 13)
 
 print("crypto" + "{" + string + "}")
