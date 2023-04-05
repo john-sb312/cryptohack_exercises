@@ -10,4 +10,4 @@ key3 = key2 ^ key2_xor_key3
 
 flag = flag_xor ^ key1 ^ key2 ^ key3
 flag = long_to_bytes(flag)
-print(flag)
+print(flag.decode("utf-8"))
